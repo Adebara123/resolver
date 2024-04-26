@@ -187,7 +187,7 @@ pub fn resolve(args: ClapperArgs) -> Result<(), Box<dyn Error>> {
                 },
                 InstallSubCommand::Noir => {
                     match install_nargo() {
-                        Ok(_) => println!("{}", "Noturup installation successful!".bright_blue()),
+                        Ok(_) => println!("{}", "Noir installation successful!".bright_blue()),
                         Err(e) => {
                             return  Err(e);
                         }
